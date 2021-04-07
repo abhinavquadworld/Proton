@@ -16,7 +16,7 @@ module.exports = {
     let embed = new MessageEmbed()
     .setColor(0x663399)
     .setTitle('Bots Latency')
-    .setAuthor('made by .Abhinav#1630')
+    .setAuthor('made by <@735091895818125314>')
     .setDescription(`🏓 | Latency is: **${Date.now() - message.createdTimestamp}ms.** `)
     .setThumbnail('https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/menu/menu-realms.gif')
     //.setURL('https://discord.js.org/')

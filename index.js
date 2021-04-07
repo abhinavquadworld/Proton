@@ -1,5 +1,6 @@
 const { Client, Collection } = require("discord.js");
 const { config } = require("dotenv");
+const keepAlive = require('./server');
 
 const client = new Client({
     disableEveryone: true
@@ -81,6 +82,7 @@ client.on("message", async message => {
         command.run(client, message, args);
 });
 
+keepAlive();
 client.login(process.env.TOKEN);
 
 //anti spam
